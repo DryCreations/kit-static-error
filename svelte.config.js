@@ -1,6 +1,6 @@
 import adapter from "@sveltejs/adapter-static";
 
-console.log(Object.keys(adapter));
+const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -15,8 +15,8 @@ const config = {
 		target: "#svelte",
 		// for hosting on gh-pages
 		paths: {
-			base: '/svelte-kit-error',
-			assets: '/svelte-kit-errror'
+			base: dev ? '' : '/kit-static-errror',
+			assets: dev ? '' : '/kit-static-errror'
 		},
 		// you can also add something like this to explicitly define additional pages, that don't rely on crawling
 		// prerender: {
