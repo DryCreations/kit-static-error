@@ -11,7 +11,7 @@
 		<link rel="modulepreload" href="/kit-static-error/_app/chunks/vendor-4cb6c218.js">
 		<link rel="modulepreload" href="/kit-static-error/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/kit-static-error/_app/pages/__layout.svelte-362c27a6.js">
-		<link rel="modulepreload" href="/kit-static-error/_app/pages/index.svelte-c912d72e.js">
+		<link rel="modulepreload" href="/kit-static-error/_app/pages/[example]/[slug].svelte-24e6d3cf.js">
 		<link rel="stylesheet" href="/kit-static-error/_app/assets/start-a8cd1609.css">
 
 		<script type="module">
@@ -29,13 +29,13 @@
 					error: null,
 					nodes: [
 						import("/kit-static-error/_app/pages/__layout.svelte-362c27a6.js"),
-						import("/kit-static-error/_app/pages/index.svelte-c912d72e.js")
+						import("/kit-static-error/_app/pages/[example]/[slug].svelte-24e6d3cf.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/example/stuff",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {"example":"example","slug":"stuff"}
 					}
 				}
 			});
@@ -47,10 +47,7 @@
 
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<a href="/kit-static-error/example/stuff">Navigate to subfolder</a>
+Navigate to example / stuff
 
 
 
