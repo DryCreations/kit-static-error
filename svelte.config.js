@@ -12,7 +12,12 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
         adapter: adapter({out: "build"}),
-		target: "#svelte"
+		target: "#svelte",
+		// you can also add something like this to explicitly define additional pages, that don't rely on crawling
+		// prerender: {
+		// 	pages: ['*', 'example/stuff2']
+		// },
+
 	}
 };
 
