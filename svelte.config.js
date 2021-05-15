@@ -15,8 +15,8 @@ const config = {
 		target: "#svelte",
 		// for hosting on gh-pages
 		paths: {
-			base: dev ? '' : '/kit-static-errror',
-			assets: dev ? '' : '/kit-static-errror'
+			base: dev ? '' : '/kit-static-error',
+			assets: dev ? '' : '/kit-static-error'
 		},
 		// you can also add something like this to explicitly define additional pages, that don't rely on crawling
 		// prerender: {
