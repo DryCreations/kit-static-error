@@ -11,8 +11,13 @@ const config = {
 	extensions: ['.svelte'],
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-        adapter: adapter({out: "build"}),
+    adapter: adapter({out: "build"}),
 		target: "#svelte",
+		// for hosting on gh-pages
+		paths: {
+			base: '/svelte-kit-error',
+			assets: '/svelte-kit-errror'
+		},
 		// you can also add something like this to explicitly define additional pages, that don't rely on crawling
 		// prerender: {
 		// 	pages: ['*', 'example/stuff2']
